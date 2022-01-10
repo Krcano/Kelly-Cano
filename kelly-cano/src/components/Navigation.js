@@ -20,17 +20,12 @@ const Navigation = () => {
     <div>
       <ul style={styles.navbar}>
         <li>
-          <a style={styles.navbarA} href="/">
-            Home
-          </a>
-        </li>
-        <li>
-          <a style={styles.navbarA} href="/#aboutMe">
+          <a href="#aboutMe" style={styles.navbarA}>
             About Me
           </a>
         </li>
         <li>
-          <a style={styles.navbarA} href="/#projects">
+          <a style={styles.navbarA} href="#projects">
             Projects
           </a>
         </li>
