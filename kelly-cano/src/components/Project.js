@@ -2,7 +2,7 @@ import React from 'react'
 
 const Project = () => {
     return (
-        <div>
+        <div id='projects'>
             
         </div>
     )
