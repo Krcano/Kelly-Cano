@@ -7,17 +7,17 @@ const styles = {
     marginRight: "5em",
     fontSize: "1.5em",
   },
+ 
   navbar: {
     display: "flex",
     justifyContent: "flex-end",
-    // alignItems: "flex-start",
+    alignItems: "flex-start",
     fontFamily: "Playfair Display, serif",
     listStyleType: "none",
   },
 };
 const Navigation = () => {
   return (
-    <div>
       <ul style={styles.navbar}>
         <li>
           <a href="#aboutMe" style={styles.navbarA}>
@@ -31,7 +31,7 @@ const Navigation = () => {
         </li>
         {/* trying to bring in my resume */}
         {/* <li>
-          <a style={styles.navbarA} href="">
+          <a style={styles.navbarA} href="./developer-resume.pdf">
               Resume</a>
         </li> */}
         <li>
@@ -40,7 +40,6 @@ const Navigation = () => {
           </a>
         </li>
       </ul>
-    </div>
   );
 };
 
