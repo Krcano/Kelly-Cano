@@ -7,11 +7,11 @@ const Portfolio = () => {
   return (
     <section className="section" id="projects">
       <div className="titleContainer">
-        <h1 className="Title">My Projects</h1>
+        <h1 className="Title">Portfolio</h1>
       </div>
       <div className="projectContainer">
         {projects.map((project) => (
-          <a href={project.link} className="projectA">
+          <div>
             <div key={project.image} className="projectImgs">
               <img alt="gallery" src={project.image} className="imageTag" />
 
@@ -29,7 +29,7 @@ const Portfolio = () => {
                 </a>
               </div>
             </div>
-          </a>
+          </div>
         ))}
       </div>
     </section>
