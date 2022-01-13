@@ -1,26 +1,11 @@
 import React from "react";
-const styles = {
-  prof: {
-    height: "15em",
-    borderRadius: " 100%",
-  },
-  aboutMeP: {
-    texAlign: "center",
-    fontSize: "1.5em"
-  },
-  aboutContainer: {
-    fontFamily: "Playfair Display, serif",
-    color: "#24305e",
-    marginLeft: " 4em",
-    marginRight:'4em'
-  },
-};
+
 const About = () => {
   return (
-    <div id="aboutMe" style={styles.aboutContainer}>
+    <div id="aboutMe" className="aboutContainer">
       <h1>About Me</h1>
-      <img src="./prof.jpg" alt="Profile" style={styles.prof} />
-      <p style={styles.aboutMeP}>
+      <img src="./prof.jpg" alt="Profile" className="profilePic" />
+      <p className="aboutMeP">
         I attended Gorman Learning Center and graduated with a 4.0 GPA as well
         as Honors. Throughout my middle and high school years, I took part in
         various volunteer activities such as assisting in the care of horses at

@@ -1,0 +1,195 @@
+/* About Page */
+.profilePic {
+  height: 15em;
+  border-radius: 100%;
+}
+.aboutMeP {
+  text-align: center;
+  font-size: 1.5em;
+}
+.aboutContainer {
+  font-family: Playfair Display serif;
+  color: #24305e;
+  margin-left: 4em;
+  margin-right: 4em;
+}
+/* --------------------------- */
+/* Contact page */
+.input {
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px;
+  border: 2px solid #24305e;
+  outline: none;
+  width: 320px;
+
+  margin-bottom: 20px;
+}
+.form {
+  display: flex;
+  margin-bottom: 32px;
+  flex-direction: column;
+  /* margin-left: 4em; */
+  /* margin-right: 4em; */
+  color: #24305e;
+  justify-content: flex-start;
+  align-items: center;
+}
+.button {
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+  width: 100px;
+  background-color: #24305e;
+  color: white;
+}
+.label {
+  font-weight: bold;
+  font-family: serif;
+  justify-content: flex-start;
+}
+/* -------------------------------------------------- */
+/* Footer */
+
+.linksContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* margin-right: 3em; */
+}
+.links {
+  padding-left: 1em;
+  margin-top: 3em;
+  margin-right: 1em;
+  /* transition: 3s; */
+  opacity: 1;
+}
+.links:hover {
+  opacity: 0.7;
+}
+/* ------------------------------------- */
+/* Header */
+
+.headerH1 {
+  margin-top: 1.5em;
+  color: #24305e;
+  margin-left: 1em;
+  margin-bottom: 1em;
+  font-family: Playfair Display serif;
+}
+.span {
+  color: #f87e49;
+}
+
+/* --------------------------------- */
+/* Navigation */
+
+.navbarA {
+  /*  paddingLeft: 1em; */
+  margin-top: 3em;
+  margin-right: 5em;
+  font-size: 1.5em;
+  justify-content: space-evenly;
+  color: #24305e;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  font-family: Playfair Display serif;
+  list-style-type: none;
+}
+.navbarA:hover{
+    color: #f87e49;
+}
+/* ----------------------------------------------------- */
+/* Projects */
+
+/* // for section title */
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: Playfair Display serif;
+  padding-left: 4em;
+  padding-right: 4em;
+  color: #24305e;
+}
+.containerTitle {
+  font-size: 2em;
+}
+
+/* //  holds everying in that have to do with the project set up */
+.projectContainer {
+  /* width: auto;
+  */
+  padding-left: 4em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+/* .section {};
+    .projectA {}; */
+.projectImgs {
+  display: flex;
+  position: relative;
+  width: 90%;
+}
+.imageOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+
+  font-family: Playfair Display serif;
+
+  flex-wrap: wrap;
+
+  text-align: center;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.5s;
+  /* border-radius: 20%; */
+}
+
+.imageOverlay:hover {
+  opacity: 1;
+}
+.imageTag {
+  display: block;
+  /* // adjusts the picture width to the overlay */
+  width: 100%;
+  /* border-radius: 20%; */
+}
+
+.imageDescr {
+  /* //   lessens the space between title and descr */
+  margin-top: 2.5em;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+.imageTitle {
+  color: white;
+  font-size: 1.5em;
+  text-decoration-style: none;
+  opacity: 1;
+}
+.imageTitle:hover {
+  opacity: 0.7;
+  /* font-size: 2em */
+}
+.icons {
+  transition: width 3s;
+}
+.icons:hover {
+  width: 50px;
+  height: 50px;
+}
