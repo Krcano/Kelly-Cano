@@ -11,13 +11,14 @@ const styles = {
   aboutContainer: {
     fontFamily: "Playfair Display, serif",
     color: "#24305e",
-    padding: " 4em",
+    marginLeft: " 4em",
+    marginRight:'4em'
   },
 };
 const About = () => {
   return (
     <div id="aboutMe" style={styles.aboutContainer}>
-      <h2>About Me</h2>
+      <h1>About Me</h1>
       <img src="./prof.jpg" alt="Profile" style={styles.prof} />
       <p style={styles.aboutMeP}>
         I attended Gorman Learning Center and graduated with a 4.0 GPA as well

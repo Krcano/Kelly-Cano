@@ -14,6 +14,8 @@ const styles = {
     marginBottom: "32px",
     flexDirection: "column",
     // justifyContent:'center'
+    marginLeft: " 4em",
+    marginRight:'4em'
   },
   button: {
     // border: "none",
@@ -25,27 +27,30 @@ const styles = {
     fontSize: "15px",
     fontFamily: "inherit",
   },
+  label:{
+    fontWeight:'bold'
+  }
 };
 const Contact = () => {
   return (
     <form id="contact" style={styles.form}>
       <h1>Want to Connect?</h1>
-      {/* <label>Name</label> */}
+      <label style={styles.label}>Name:</label>
       <input
         style={styles.input}
         type="text"
-        placeholder="Add your name"
+        // placeholder="Add your name"
       ></input>
-      {/* <label>Email Address</label> */}
+      <label style={styles.label}>Email Address:</label>
       <input
         style={styles.input}
         type="text"
-        placeholder="Add your email"
+        // placeholder="Add your email"
       ></input>
-      {/* <label>Message</label> */}
+      <label style={styles.label}>Message:</label>
       <textarea
         style={styles.input}
-        placeholder="Write your message"
+        // placeholder="Write your message"
       ></textarea>
       <button style={styles.button}>Submit</button>
     </form>
