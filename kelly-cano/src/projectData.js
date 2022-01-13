@@ -19,5 +19,13 @@ export const projects=[
     github:'https://github.com/Krcano/Job-Tracker',
     deployedLink:"https://atlas-job-tracker.herokuapp.com/"
 
+    },
+    {title: "Tech Blog",
+    description: "An app that allows you to create a Tech Blog so you, your friends, and colleagues can talk about the latest technologies.",
+    image:'./homepage.png',
+    github:'https://github.com/Krcano/Tech-Blog',
+    deployedLink:"https://pacific-cliffs-94965.herokuapp.com/login"
+
     }
+
 ]

@@ -1,16 +1,16 @@
 import React from "react";
 // import Resume from './developer-resume.pdf'
 
-const Navigation = () => {
+const Navigation = ({currentPage, handlePages}) => {
   return (
       <ul className="navbar">
         <li>
-          <a href="#aboutMe" className="navbarA">
+          <a href="#aboutMe" className="navbarA" onClick={()=>handlePages('aboutMe')}>
             About Me
           </a>
         </li>
         <li>
-          <a className="navbarA" href="#projects">
+          <a className="navbarA" href="#projects" onClick={()=>handlePages('portfolio')}>
             Portfolio
           </a>
         </li>
@@ -20,7 +20,7 @@ const Navigation = () => {
               Resume</a>
         </li>
         <li>
-          <a className="navbarA" href="/#contact">
+          <a className="navbarA" href="/#contact" onClick={()=>handlePages('contact')}>
             Contact
           </a>
         </li>

@@ -8,12 +8,25 @@ import { useState } from "react";
 
 
 function App() {
+  const [currentPage, setCurrentPage] = useState('aboutMe')
+  const renderPage=()=>{
+    if( currentPage === 'aboutMe'){
+      return <About/>
+    }
+    if(currentPage === 'portfolio'){
+      return <Portfolio/>
+    }
+    if(currentPage === 'contact'){
+      return <Contact/>
+    }
+  }
+  const handlePages=(page)=>setCurrentPage(page)
+ 
  return (
     <div >
-      <Header />
-      <About/>
-      <Portfolio />
-      <Contact/>
+      <Header currentPage={currentPage} handlePages={handlePages}/>   
+      
+      {renderPage()}
       <Footer />
     </div>
   );
