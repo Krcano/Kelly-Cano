@@ -5,12 +5,23 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="linksContainer">
-      <a className="links" href="https://github.com/Krcano" target='blank'>
+      <a className="links" href="https://github.com/Krcano" target="blank">
         <img src="./GitHub-Mark/PNG/GitHub-Mark-32px.png" alt="Github icon" />
       </a>
-      <a className="links" href="https://www.linkedin.com/in/kelly-r-cano/" target='blank'>
+      <a
+        className="links"
+        href="https://www.linkedin.com/in/kelly-r-cano/"
+        target="blank"
+      >
         <img src="./linkedin-logo-2430 (1).png" alt="LinkedIn icon" />
-        </a>
+      </a>
+      <a
+        className="links"
+        href="https://stackoverflow.com/users/16426701/kelly-cano"
+        target="blank"
+      >
+        <img src="./stack-overflow-32px.png" alt="Stack Overflow icon" />
+      </a>
     </div>
   );
 };

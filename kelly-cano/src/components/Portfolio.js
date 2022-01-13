@@ -1,13 +1,13 @@
 import React from "react";
 import { projects } from "../projectData";
 
-const Project = () => {
+const Portfolio = () => {
  
 
   return (
     <section className="section" id="projects">
-      <div className="textContainer">
-        <h1 className="containerTitle">My Projects</h1>
+      <div className="titleContainer">
+        <h1 className="Title">My Projects</h1>
       </div>
       <div className="projectContainer">
         {projects.map((project) => (
@@ -36,4 +36,4 @@ const Project = () => {
   );
 };
 
-export default Project;
+export default Portfolio;

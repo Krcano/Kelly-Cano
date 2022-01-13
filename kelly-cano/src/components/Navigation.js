@@ -1,5 +1,5 @@
 import React from "react";
-// import Resume from ''
+// import Resume from './developer-resume.pdf'
 
 const Navigation = () => {
   return (
@@ -11,14 +11,14 @@ const Navigation = () => {
         </li>
         <li>
           <a className="navbarA" href="#projects">
-            Projects
+            Portfolio
           </a>
         </li>
         {/* trying to bring in my resume */}
-        {/* <li>
-          <a style=className="styles.navbarA" href="./developer-resume.pdf">
+        <li>
+          <a className="navbarA" target='blank' href="https://docs.google.com/document/d/1fyFPhvaP-1Lo1lQ4bbuSqSZTdiliBTZT1yPz8wfJ2K4/edit?usp=sharing">
               Resume</a>
-        </li> */}
+        </li>
         <li>
           <a className="navbarA" href="/#contact">
             Contact
