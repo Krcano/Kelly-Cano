@@ -129,9 +129,9 @@
 .navbarA:hover {
   color: #f87e49;
 }
-/* .navbarA:visited{
-  /* text-decoration-color:pink */
-/* }  */
+.navbarA:active{
+ color:pink 
+ } 
 
 /* ----------------------------------------------------- */
 /* Projects */
@@ -181,7 +181,7 @@
   font-weight: bold;
   opacity: 0;
   transition: opacity 0.5s;
-  border: black 5px solid
+  /* border: black 5px solid */
 }
 
 .imageOverlay:hover {
@@ -200,7 +200,7 @@
   margin-top: 2.5em;
   margin-left: 2em;
   margin-right: 2em;
-  font-size: 1.5em;
+  font-size: 1.25em;
 }
 .imageTitle {
   color: white;

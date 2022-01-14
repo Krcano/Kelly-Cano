@@ -47,7 +47,7 @@ const Contact = () => {
     <div>
     <form id="contact" className="form">
       <h1>Want to Connect?</h1>
-      <h3 className="contactText">Feel free to contact me at <a href="mailto:krcano2001@gmail.com">krcano2001@gmail.com</a> if you would like to build something together or if you have any questions</h3>
+      <h3 className="contactText">Feel free to contact me at <a href="mailto:krcano2001@gmail.com">krcano2001@gmail.com</a> or fill out the form below to reach out</h3>
       <label className="label">Name:</label>
       <input
         className="input"

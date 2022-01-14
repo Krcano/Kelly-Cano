@@ -1,14 +1,14 @@
 export const projects=[
     {title: "Weather Dashboard",
     description: "This app is a weather dashboard to show you the current and future forecast in the city of your choosing",
-    image:'./weather-dashboard.png',
+    image:'./weather-screenshot.png',
     github:'https://github.com/Krcano/Weather-Dashboard',
     deployedLink:"https://krcano.github.io/Weather-Dashboard/"
 
     },
     {title: "What's for Dinner?",
     description: "What's for Dinner is an app that helps people make the best decision that busy people have to deal with every day, what should I make for dinner?",
-    image:'./whatsForDinner.png',
+    image:'./sh.png',
     github:'https://github.com/jdesgarennes/whatsForDinner',
     deployedLink:"https://jdesgarennes.github.io/whatsForDinner/"
 
