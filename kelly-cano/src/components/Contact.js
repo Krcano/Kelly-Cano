@@ -8,8 +8,8 @@ const Contact = () => {
     useForm(validateInfo);
 
   return (
-    <div>
-      <form id="contact" className="form" onSubmit={handleFormSubmit}>
+    <div id="contact">
+      <form  className="form" onSubmit={handleFormSubmit}>
         <h1>Want to Connect?</h1>
         <h3 className="contactText">
           Feel free to contact me at{" "}

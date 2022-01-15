@@ -20,7 +20,14 @@ function App() {
       return <Contact/>
     }
   }
-  const handlePages=(page)=>setCurrentPage(page)
+  const handlePages=(page)=>{
+    setCurrentPage(page)
+    const style = {
+      navbarFocus: {
+        color: 'red',
+      },
+    }
+  }
  
  return (
     <div >

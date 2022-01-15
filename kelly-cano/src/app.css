@@ -33,7 +33,7 @@
   margin-bottom: 32px;
   flex-direction: column;
   /* margin-left: 4em; */
-  margin-top: 3em;
+  /* margin-top: 3em; */
   color: #24305e;
   justify-content: flex-start;
   align-items: center;
@@ -48,7 +48,7 @@
   text-decoration: none;
   font-size: 15px;
   font-family: inherit;
-  width: 100px;
+  width: 450px;
   background-color: #24305e;
   color: white;
 }
@@ -101,7 +101,7 @@
   justify-content: flex-start;
 }
 .span {
-  color: #f87e49;
+  color: rgb(83, 179, 147);
 }
 .headerContainer{
   display: flex;
@@ -131,11 +131,12 @@
 
 }
 .navbarA:hover {
-  color: #f87e49;
+  color: aquamarine;
 }
-.navbarA:active{
- color:pink 
- } 
+/* 
+.navbarA:{
+  color: red
+} */
 
 /* ----------------------------------------------------- */
 /* Projects */
@@ -147,9 +148,8 @@
   align-items: flex-start;
   font-family: Playfair Display serif;
   padding-left: 4em;
-  padding-right: 4em;
+  /* padding-right: 4em; */
   color: #24305e;
-  margin-top: 5em;
 }
 .Title {
   font-size: 2em;
@@ -168,8 +168,9 @@
 .projectImgs {
   display: flex;
   position: relative;
-  width: 90%;
+  width: 100%;
   margin-top: 3em;
+
 }
 .imageOverlay {
   position: absolute;
@@ -186,8 +187,16 @@
   opacity: 0;
   transition: opacity 0.3s;
   /* border: black 5px solid */
+  /* padding-left: 4em; */
+  
 }
+.imageOverlay a{
+  text-decoration-color:aquamarine
 
+}
+.imageOverlay a:hover{
+  text-decoration-color: white;
+}
 .imageOverlay:hover {
   opacity: 1;
 }
@@ -196,13 +205,12 @@
   /* // adjusts the picture width to the overlay */
   width: 100%;
 
-  /* border-radius: 20%; */
 }
 
 .imageDescr {
-  /* //   lessens the space between title and descr */
+  /* makes the space between title and descr */
   margin-top: 2.5em;
-  margin-left: 2em;
+  margin-left: 2em; 
   margin-right: 2em;
   font-size: 1.25em;
 }
@@ -210,10 +218,11 @@
   color: white;
   font-size: 2em;
   opacity: 1;
-
+  
 }
 .imageTitle:hover {
-  opacity: 0.7;
+  /* opacity: 0.7; */
+  color:aquamarine
   /* font-size: 2em */
  
 }

@@ -10,7 +10,7 @@ const Portfolio = () => {
       <div className="projectContainer">
         {projects.map((project) => (
           <div>
-            <div key={project.title} className="projectImgs">
+            <div key={project.id} className="projectImgs">
               <img alt="gallery" src={project.image} className="imageTag" />
 
               <div className="imageOverlay">
