@@ -2,8 +2,6 @@ import React from "react";
 import { projects } from "../projectData";
 
 const Portfolio = () => {
- 
-
   return (
     <section className="section" id="portfolio">
       <div className="titleContainer">
@@ -12,7 +10,7 @@ const Portfolio = () => {
       <div className="projectContainer">
         {projects.map((project) => (
           <div>
-            <div key={project.image} className="projectImgs">
+            <div key={project.title} className="projectImgs">
               <img alt="gallery" src={project.image} className="imageTag" />
 
               <div className="imageOverlay">

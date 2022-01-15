@@ -1,83 +1,58 @@
 import React from "react";
-// import { validateEmail, checkPassword } from "../utils/helper";
-import { useState } from "react";
+import validateInfo from "../utils/helper";
+// import { useState } from "react";
+import useForm from "./useContactForm";
 
 const Contact = () => {
-  const [email, setEmail] = useState("");
-  const [name, setName] = useState("");
-  const [message, setMessage] = useState("");
-  const [errorMessage, setErrorMessage] = useState("");
-
-
-  const handleInput = (e) => {
-    const inputValue = e.target.value;
-    if (name) {
-      setName(inputValue);
-    } else if (email) {
-      setEmail(inputValue);
-    } else {
-      setMessage(inputValue);
-    }
-  };
-
-  const handleFormSubmit = (e) => {
-    e.preventDefault();
-    if (
-      // !validateEmail(email) ||
-     !email || !name || !message) {
-      setErrorMessage("Please fill in the missing field");
-      
-      return;
-    }
-    // if (!name) {
-    //   setErrorMessage("Please type in your name");
-      
-    // }
-
-    // if (!message) {
-    //   setErrorMessage("Please type in a brief message");
-    //   return;
-    // }
-    setEmail("");
-    setName("");
-    setMessage("");
-  };
+  const { handleInputChange, values, handleFormSubmit, errors } =
+    useForm(validateInfo);
 
   return (
     <div>
-    <form id="contact" className="form">
-      <h1>Want to Connect?</h1>
-      <h3 className="contactText">Feel free to contact me at <a href="mailto:krcano2001@gmail.com">krcano2001@gmail.com</a> or fill out the form below to reach out</h3>
-      <label className="label">Name:</label>
-      <input
-        className="input"
-        type="text"
-        onChange={handleInput}
-        
-        // placeholder="Add your name"
-      ></input>
-      <label className="label">Email Address:</label>
-      <input
-        className="input"
-        type="email"
-        onChange={handleInput}
-        // placeholder="Add your email"
-        
-      ></input>
-      <label className="label">Message:</label>
-      <textarea
-        className="input"
-        onChange={handleInput}
-        // placeholder="Write your message"
-        
-      ></textarea>
-      <button className="button" onClick={handleFormSubmit}>Submit</button>
-    </form>
-     {errorMessage &&  (
-      <div>
-        <p className="errorText">{errorMessage}</p>
-      </div>
-    )  }
+      <form id="contact" className="form" onSubmit={handleFormSubmit}>
+        <h1>Want to Connect?</h1>
+        <h3 className="contactText">
+          Feel free to contact me at{" "}
+          <a href="mailto:krcano2001@gmail.com">krcano2001@gmail.com</a> or fill
+          out the form below to reach out
+        </h3>
+        <label className="label">Name:</label>
+        <input
+          className="input"
+          name="name"
+          type="text"
+          onChange={handleInputChange}
+          value={values.name}
+          placeholder="Please enter your name"
+        />
+        {errors.name && <p className="errorText">{errors.name}</p>}
+        <label className="label">Email Address:</label>
+        <input
+          className="input"
+          type="text"
+          name="email"
+          onChange={handleInputChange}
+          placeholder="Please enter your email"
+          value={values.email}
+        />
+        {errors.email && <p className="errorText">{errors.email}</p>}
+        <label className="label">Message:</label>
+        <textarea
+          className="input"
+          onChange={handleInputChange}
+          name="message"
+          placeholder=" Please write a brief message"
+          value={values.message}
+        />
+        {errors.message && <p className="errorText">{errors.message}</p>}
+        <button
+          className="button"
+          type="submit"
+         
+        >
+          Submit
+        </button>
+      </form>
     </div>
   );
 };

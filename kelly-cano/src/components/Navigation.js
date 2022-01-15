@@ -1,7 +1,7 @@
 import React from "react";
 // import Resume from './developer-resume.pdf'
 
-const Navigation = ({currentPage, handlePages}) => {
+const Navigation = ({handlePages}) => {
   return (
       <ul className="navbar">
         <li>
