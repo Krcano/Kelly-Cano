@@ -8,9 +8,13 @@ This project is the updated version of my portfolio. My original portfolio used 
 
 ## Usage
 
-To navigate to the page you want to go to click the navigation bar at the top for that page. If you would like to view my projects i've worked on you can go to portfolio and see pictures of my latest work and when you hover over them you will see the title with the deployed link, the github link and description. On the contact page there is a form where you will need to fill out all three fields before you hit submit. However if you do forget to fill one out before you hit submit, the page will remind you of which one is missing. One fun aspect of my portfolio page is the partciles in the background that allow you to interact by clicking the page and moving the particles around.
+To navigate to the page you want to go to click the navigation bar at the top for that page. If you would like to view my projects i've worked on you can go to portfolio and see pictures of my latest work and when you hover over them you will see the title with the deployed link, the github link and description. On the contact page there is a form where you will need to fill out all three fields before you hit submit. However if you do forget to fill one out before you hit submit, the page will remind you of which one is missing. One fun aspect of my portfolio page is the partciles in the background that allow you to interact by clicking the page and moving the particles
 
-![screenshot]()
+![About Me Page](./Assets/about-me.png)
+![Portfolio Page](./Assets/portfolio-page.png)
+![Contact Page](./Assets/contact-page.png)
+
+
 
 ## Technologies
 
