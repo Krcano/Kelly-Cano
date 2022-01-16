@@ -15,7 +15,7 @@ const About = () => {
         of Redlands, and aiding in the renovation/construction of the local
         Kingdom Hall of Jehovah's Witnesses.These experiences were very
         rewarding and they helped me to see the importance of a self-sacrificing
-        spirit and supported the validity to the statement that "there is more
+        spirit and supported the validity to the statement that "There is more
         happiness in giving than receiving". (Acts 20:35) I love working as part
         of a team and collaborating with others to solve problems that arise.
       </p></div>
