@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className="linksContainer">
       <a className="links" href="https://github.com/Krcano" target="blank">
-        <img src="./GitHub-Mark/PNG/GitHub-Mark-32px.png" alt="Github icon" />
+        <img src="./GitHub-Mark/PNG/white-github-40px.png" alt="Github icon" />
       </a>
       <a
         className="links"

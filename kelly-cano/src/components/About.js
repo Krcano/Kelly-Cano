@@ -1,11 +1,13 @@
 import React from "react";
+// import ParticleBackground from "./ParticleBackground";
 
 const About = () => {
   return (
+    
     <div id="aboutMe" className="aboutContainer">
       <h1>About Me</h1>
-      <img src="./prof.jpg" alt="Profile" className="profilePic" />
-      <p className="aboutMeP">
+      <div className="picBackground"><img src="./prof.jpg" alt="Profile" className="profilePic" /></div>
+      <div className="aboutMeP"> <p >
         I attended Gorman Learning Center and graduated with a 4.0 GPA as well
         as Honors. Throughout my middle and high school years, I took part in
         various volunteer activities such as assisting in the care of horses at
@@ -16,8 +18,10 @@ const About = () => {
         spirit and supported the validity to the statement that "there is more
         happiness in giving than receiving". (Acts 20:35) I love working as part
         of a team and collaborating with others to solve problems that arise.
-      </p>
+      </p></div>
+     
     </div>
+    // </ParticleBackground>
   );
 };
 

@@ -1,8 +1,9 @@
 import React from "react";
-
+import ParticleBackground from "./ParticleBackground";
 const Navigation = ({ handlePages, currentPage }) => {
   return (
     <ul className="navbar">
+      <ParticleBackground/>
       <li>
         <a
           href="#aboutMe"
