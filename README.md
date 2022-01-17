@@ -14,7 +14,7 @@ To navigate to the page you want to go to click the navigation bar at the top fo
 ![Portfolio Page](./Assets/portfolio-page.png)
 ![Contact Page](./Assets/contact-page.png)
 
-
+[LIVE SITE](https://krcano.github.io/Kelly-Cano/#aboutMe)
 
 ## Technologies
 
