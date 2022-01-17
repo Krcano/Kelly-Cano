@@ -27,12 +27,10 @@
   font-family: Playfair Display serif;
   color: white;
   margin-left: 2em;
-  /* border: #b11687 3px dashed; */
   margin-right: 4em;
   margin-top: 5em;
   padding-left: 4em;
   padding-right: 2em;
-  /* align-items: flex-end */
 }
 /* --------------------------- */
 /* Contact page */
@@ -196,8 +194,6 @@
   justify-content: center;
   width: 100%;
   margin-top: 5em;
-  /* margin-left: 3em;
-  margin-right: 3em; */
 }
 .imageOverlay {
   position: absolute;
@@ -212,8 +208,6 @@
   font-weight: bold;
   opacity: 0;
   transition: opacity 0.5s;
-  /* margin-left: 3em;
-  margin-right: 3em; */
 }
 .imageOverlay a {
   text-decoration-color: #b11687;
@@ -224,10 +218,6 @@
 .imageOverlay:hover {
   opacity: 1;
 }
-/* .imageTag {
-  /* display: flex; */
-/* width: 100%; */
-/* }  */
 
 .imageDescr {
   /* makes the space between title and descr */
@@ -276,17 +266,13 @@
   .aboutMeP p {
     display: flex;
     flex-direction: row;
-    /* justify-content: center; */
     width: 800px;
     margin-right: 15em;
     flex-wrap: wrap;
   }
   .aboutContainer h1 {
     display: flex;
-    /* justify-content: center; */
     text-align: center;
-    /* align-items: center; */
-    /* padding-right: 10em; */
   }
   .aboutContainer {
     display: flex;
@@ -295,13 +281,11 @@
 
     flex-wrap: wrap;
     text-align: center;
-    /* margin-bottom: 10em; */
-    /* flex-direction: row; */
   }
-  .aboutMeP{
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content:center;
+  .aboutMeP {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-top: 15em;
     margin-right: 25em;
   }
@@ -312,7 +296,7 @@
     width: 600px;
     /* text-align: center; */
   }
-  .aboutMeP{
+  .aboutMeP {
     margin-right: 20em;
   }
   .contactText {
