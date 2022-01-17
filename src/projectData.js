@@ -50,7 +50,7 @@ export const projects = [
     title: "Day Planner",
     description:
       "The Day Planner tracks a 12 hour day from 8am to 8pm. It shows you the current day where you can write in your planned events and save them. The planner color codes the time blocks based on what time it is, grey is past, red is current time, and green is future.",
-    image: "/plannerScreenshot.png",
+    image: "./plannerScreenshot.png",
     github: " https://github.com/Krcano/Day-Planner",
     deployedLink: " https://krcano.github.io/Day-Planner/",
   },
