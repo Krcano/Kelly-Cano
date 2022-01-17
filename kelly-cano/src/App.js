@@ -8,7 +8,8 @@ import { useState } from "react";
 
 
 function App() {
-  const [currentPage, setCurrentPage] = useState("aboutMe");
+  const [currentPage, setCurrentPage] = useState("aboutMe")
+  ;
   const renderPage = () => {
     if (currentPage === "aboutMe") {
       return <About />;
@@ -31,7 +32,8 @@ function App() {
 
   return (
     <div className="App">
-      <Header currentPage={currentPage} handlePages={handlePages} />
+      <Header currentPage={currentPage} 
+      handlePages={handlePages} />
      
       {renderPage()}
 

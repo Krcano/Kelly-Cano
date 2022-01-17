@@ -158,9 +158,11 @@
   color: #f64c72;
 }
 
-/* .active{
+.active{
   color: red;
-} */
+  margin-right: 2em;
+  font-size: 1.5em;
+}
 
 /* ----------------------------------------------------- */
 /* Projects */
@@ -218,10 +220,10 @@
 .imageOverlay:hover {
   opacity: 1;
 }
-.imageTag {
+/* .imageTag {
   /* display: flex; */
   /* width: 100%; */
-}
+/* }  */
 
 .imageDescr {
   /* makes the space between title and descr */
@@ -242,4 +244,25 @@
 .icons:hover {
   width: 50px;
   height: 50px;
+}
+
+@media screen and (max-width:950px ) {
+ 
+  .headerContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .navbar{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0em;
+  }
+  /* .navbar li{
+    display: inline;
+  } */
+
 }

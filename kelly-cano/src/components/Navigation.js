@@ -1,23 +1,27 @@
-import React from "react";
+import { useState } from "react";
 import ParticleBackground from "./ParticleBackground";
 const Navigation = ({ handlePages, currentPage }) => {
+  const [currentTab, setCurrentTab] = useState('')
+
   return (
     <ul className="navbar">
       <ParticleBackground/>
       <li>
         <a
           href="#aboutMe"
-          className={"navbarA"}
-          onClick={() => handlePages("aboutMe")}
+          className={currentTab === 'aboutMe' ? 'active'  :"navbarA"}
+          onClick={() =>{ handlePages("aboutMe") 
+        setCurrentTab('aboutMe')}}
         >
           About Me
         </a>
       </li>
       <li>
         <a
-          className={"navbarA"}
+          className={currentTab === 'portfolio' ? 'active' :"navbarA"}
           href="#portfolio"
-          onClick={() => handlePages("portfolio")}
+          onClick={() => {handlePages("portfolio") 
+        setCurrentTab('portfolio')}}
         >
           Portfolio
         </a>
@@ -25,9 +29,10 @@ const Navigation = ({ handlePages, currentPage }) => {
 
       <li>
         <a
-          className={"navbarA"}
+          className={currentTab === 'contact' ? 'active'  :"navbarA"}
           href="#contact"
-          onClick={() => handlePages("contact")}
+          onClick={() =>{ handlePages("contact") 
+          setCurrentTab('contact')}}
         >
           Contact
         </a>
