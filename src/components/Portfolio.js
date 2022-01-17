@@ -9,7 +9,7 @@ const Portfolio = () => {
       </div>
       <div className="projectContainer">
         {projects.map((project) => (
-          <div>
+          <div className="indvProject">
             <div key={project.id} className="projectImgs">
               <img alt="gallery" src={project.image} className="imageTag" />
 

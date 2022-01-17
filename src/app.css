@@ -158,7 +158,7 @@
   color: #f64c72;
 }
 
-.active{
+.active {
   color: red;
   margin-right: 2em;
   font-size: 1.5em;
@@ -187,7 +187,7 @@
   padding-left: 4em;
   display: flex;
   flex-direction: row;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
 }
 
 .projectImgs {
@@ -196,6 +196,8 @@
   justify-content: center;
   width: 100%;
   margin-top: 5em;
+  /* margin-left: 3em;
+  margin-right: 3em; */
 }
 .imageOverlay {
   position: absolute;
@@ -210,6 +212,8 @@
   font-weight: bold;
   opacity: 0;
   transition: opacity 0.5s;
+  /* margin-left: 3em;
+  margin-right: 3em; */
 }
 .imageOverlay a {
   text-decoration-color: #b11687;
@@ -222,7 +226,7 @@
 }
 /* .imageTag {
   /* display: flex; */
-  /* width: 100%; */
+/* width: 100%; */
 /* }  */
 
 .imageDescr {
@@ -246,23 +250,75 @@
   height: 50px;
 }
 
-@media screen and (max-width:950px ) {
- 
-  .headerContainer{
+@media screen and (max-width: 1050px) {
+  .headerContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-  .navbar{
+  .navbar {
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
     margin-left: 0em;
   }
-  /* .navbar li{
-    display: inline;
-  } */
 
+  .picBackground {
+    position: absolute;
+    margin-left: 0em;
+    align-items: center;
+  }
+  .profilePic {
+    height: 300px;
+  }
+  .aboutMeP p {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    width: 700px;
+    /* margin-right: 15em; */
+    /* flex-wrap: wrap; */
+  }
+  .aboutContainer h1 {
+    display: flex;
+    /* justify-content: center; */
+    text-align: center;
+    /* align-items: center; */
+    /* padding-right: 10em; */
+  }
+  .aboutContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+    text-align: center;
+    /* margin-bottom: 10em; */
+    /* flex-direction: row; */
+  }
+  /* .aboutMeP{
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content:center
+
+  } */
+}
+
+@media screen and (max-width: 900px) {
+  .aboutMeP p {
+    width: 600px;
+    /* text-align: center; */
+  }
+  .contactText {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    justify-content: center;
+  }
+  .titleContainer {
+    display: flex;
+    align-items: center;
+  }
 }
