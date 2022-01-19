@@ -6,10 +6,8 @@ import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import { useState } from "react";
 
-
 function App() {
-  const [currentPage, setCurrentPage] = useState("aboutMe")
-  ;
+  const [currentPage, setCurrentPage] = useState("aboutMe");
   const renderPage = () => {
     if (currentPage === "aboutMe") {
       return <About />;
@@ -21,23 +19,15 @@ function App() {
       return <Contact />;
     }
   };
-  const handlePages = (page) => {
-    setCurrentPage(page);
-    // const style = {
-    //   navbarFocus: {
-    //     color: 'red',
-    //   },
-    // }
-  };
+  const handlePages = (page) => setCurrentPage(page);
 
   return (
     <div className="App">
-      <Header currentPage={currentPage} 
-      handlePages={handlePages} />
-     
+      <Header currentPage={currentPage} handlePages={handlePages} />
+
       {renderPage()}
 
-      <Footer className="App"/>
+      <Footer className="App" />
     </div>
   );
 }
