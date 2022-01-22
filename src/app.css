@@ -1,5 +1,7 @@
 .App {
   background: linear-gradient(to bottom, #2f2fa2, #242582);
+  /* height: 100vh; */
+  width: 100vw;
 }
 
 /* About Page */
@@ -105,6 +107,7 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 6em;
+  
 }
 .links {
   padding-left: 1em;
@@ -112,6 +115,7 @@
   margin-right: 1em;
   opacity: 0.6;
   margin-bottom: 2em;
+
 }
 .links:hover {
   opacity: 1;
@@ -257,7 +261,7 @@
 
   .picBackground {
     position: absolute;
-    margin-left: 0em;
+    margin-left: 3em;
     align-items: center;
   }
   .profilePic {
@@ -294,10 +298,13 @@
 @media screen and (max-width: 950px) {
   .aboutMeP p {
     width: 600px;
+    padding-left: 15px;
+    padding-right: 15px;
     /* text-align: center; */
   }
   .aboutMeP {
     margin-right: 20em;
+    
   }
   .contactText {
     display: flex;
