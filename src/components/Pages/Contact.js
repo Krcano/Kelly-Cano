@@ -1,7 +1,7 @@
 import React from "react";
-import validateInfo from "../utils/helper";
+import validateInfo from "../../utils/helper";
 // import { useState } from "react";
-import useForm from "./useContactForm";
+import useForm from "../useContactForm";
 
 const Contact = () => {
   const { handleInputChange, values, handleFormSubmit, errors } =

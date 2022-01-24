@@ -1,34 +1,26 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import About from "./components/About";
+import About from "./components/Pages/About";
 import "./app.css";
-import Portfolio from "./components/Portfolio";
-import Contact from "./components/Contact";
-import { useState } from "react";
+import Portfolio from "./components/Pages/Portfolio";
+import Contact from "./components/Pages/Contact";
+import ParticleBackground from "./components/ParticleBackground";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
-  const [currentPage, setCurrentPage] = useState("aboutMe");
-  const renderPage = () => {
-    if (currentPage === "aboutMe") {
-      return <About />;
-    }
-    if (currentPage === "portfolio") {
-      return <Portfolio />;
-    }
-    if (currentPage === "contact") {
-      return <Contact />;
-    }
-  };
-  const handlePages = (page) => setCurrentPage(page);
-
   return (
-    <div className="App">
-      <Header currentPage={currentPage} handlePages={handlePages} />
-
-      {renderPage()}
-
+    <Router >
+      <div className="App">
+      <ParticleBackground />
+      <Header />
+      <Routes>
+        <Route path="/" element={<About/>} />
+        <Route path="/portfolio" element={<Portfolio/>} />
+        <Route path="/contact" element={<Contact/>} />
+      </Routes>
       <Footer className="App" />
-    </div>
+      </div>
+    </Router>
   );
 }
 

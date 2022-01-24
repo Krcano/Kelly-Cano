@@ -1,9 +1,9 @@
 import React from "react";
-import { projects } from "../projectData";
+import { projects } from "../../projectData";
 
 const Portfolio = () => {
   return (
-    <section className="section" id="portfolio">
+    <section className="section" >
       <div className="titleContainer">
         <h1 className="Title">Portfolio</h1>
       </div>
