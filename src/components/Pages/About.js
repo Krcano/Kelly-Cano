@@ -6,7 +6,7 @@ const About = () => {
     
     <div id="aboutMe" className="aboutContainer">
       <h1>About Me</h1>
-      <div className="picBackground"><img src="./imgs/prof.jpg" alt="Profile" className="profilePic" /></div>
+      <div className="picBackground"><img src="./prof.jpg" alt="Profile" className="profilePic" /></div>
       <div className="aboutMeP"> <p  >
         I attended Gorman Learning Center and graduated with a 4.0 GPA as well
         as Honors. Throughout my middle and high school years, I took part in
