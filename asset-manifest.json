@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Kelly-Cano/static/css/main.f1257ee3.css",
-    "main.js": "/Kelly-Cano/static/js/main.d42f9bb7.js",
+    "main.js": "/Kelly-Cano/static/js/main.2231afba.js",
     "static/js/787.d1680aed.chunk.js": "/Kelly-Cano/static/js/787.d1680aed.chunk.js",
     "index.html": "/Kelly-Cano/index.html",
     "main.f1257ee3.css.map": "/Kelly-Cano/static/css/main.f1257ee3.css.map",
-    "main.d42f9bb7.js.map": "/Kelly-Cano/static/js/main.d42f9bb7.js.map",
+    "main.2231afba.js.map": "/Kelly-Cano/static/js/main.2231afba.js.map",
     "787.d1680aed.chunk.js.map": "/Kelly-Cano/static/js/787.d1680aed.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f1257ee3.css",
-    "static/js/main.d42f9bb7.js"
+    "static/js/main.2231afba.js"
   ]
 }
