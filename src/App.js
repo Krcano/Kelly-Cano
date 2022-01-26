@@ -5,7 +5,7 @@ import "./app.css";
 import Portfolio from "./components/Pages/Portfolio";
 import Contact from "./components/Pages/Contact";
 import ParticleBackground from "./components/ParticleBackground";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
