@@ -4,23 +4,31 @@ import About from "./components/Pages/About";
 import "./app.css";
 import Portfolio from "./components/Pages/Portfolio";
 import Contact from "./components/Pages/Contact";
-import ParticleBackground from "./components/ParticleBackground";
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { useState } from "react";
 
 function App() {
+  const [currentPage, setCurrentPage] = useState("aboutMe");
+  const renderPage = () => {
+    if (currentPage === "aboutMe") {
+      return <About />;
+    }
+    if (currentPage === "portfolio") {
+      return <Portfolio />;
+    }
+    if (currentPage === "contact") {
+      return <Contact />;
+    }
+  };
+  const handlePages = (page) => setCurrentPage(page);
+
   return (
-    <Router >
-      <div className="App">
-      <ParticleBackground />
-      <Header />
-      <Routes>
-        <Route path="/" element={<About/>} />
-        <Route path="/portfolio" element={<Portfolio/>} />
-        <Route path="/contact" element={<Contact/>} />
-      </Routes>
+    <div className="App">
+      <Header currentPage={currentPage} handlePages={handlePages} />
+
+      {renderPage()}
+
       <Footer className="App" />
-      </div>
-    </Router>
+    </div>
   );
 }
 

@@ -1,48 +1,41 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
-// import ParticleBackground from "./ParticleBackground";
-const Navigation = () => {
-  const [currentTab, setCurrentTab] = useState("");
+import ParticleBackground from "./ParticleBackground";
+const Navigation = ({ handlePages }) => {
+  const [currentTab, setCurrentTab] = useState('')
 
   return (
     <ul className="navbar">
-      {/* <ParticleBackground /> */}
+      <ParticleBackground/>
       <li>
-        <Link
-          to="/"
-          // href="#aboutMe"
-          className={currentTab === "/" ? "active" : "navbarA"}
-          onClick={() => {
-            setCurrentTab("/");
-          }}
+        <a
+          href="#aboutMe"
+          className={currentTab === 'aboutMe' ? 'active'  :"navbarA"}
+          onClick={() =>{ handlePages("aboutMe") 
+        setCurrentTab('aboutMe')}}
         >
           About Me
-        </Link>
+        </a>
       </li>
       <li>
-        <Link
-          to="/portfolio"
-          className={currentTab === "portfolio" ? "active" : "navbarA"}
-          // href="#portfolio"
-          onClick={() => {
-            setCurrentTab("portfolio");
-          }}
+        <a
+          className={currentTab === 'portfolio' ? 'active' :"navbarA"}
+          href="#portfolio"
+          onClick={() => {handlePages("portfolio") 
+        setCurrentTab('portfolio')}}
         >
           Portfolio
-        </Link>
+        </a>
       </li>
 
       <li>
-        <Link
-          to="/contact"
-          className={currentTab === "contact" ? "active" : "navbarA"}
-          // href="#contact"
-          onClick={() => {
-            setCurrentTab("contact");
-          }}
+        <a
+          className={currentTab === 'contact' ? 'active'  :"navbarA"}
+          href="#contact"
+          onClick={() =>{ handlePages("contact") 
+          setCurrentTab('contact')}}
         >
           Contact
-        </Link>
+        </a>
       </li>
 
       <li>
