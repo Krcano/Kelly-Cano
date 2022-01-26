@@ -186,7 +186,7 @@
 .projectContainer {
   width: auto;
   flex-wrap: wrap;
-  padding-left: 4em;
+  /* padding-left: 2em; */
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -315,5 +315,6 @@
   .titleContainer {
     display: flex;
     align-items: center;
+    padding-left: 0em;
   }
 }
