@@ -1,7 +1,7 @@
 .App {
   background: linear-gradient(to bottom, #2f2fa2, #242582);
-  /* height: 100vh; */
-  width: 100vw;
+  /* height: 100vh;
+  width: 100vw; */
 }
 
 /* About Page */
@@ -9,6 +9,7 @@
   display: flex;
   position: absolute;
   margin-left: 9em;
+  
 }
 .profilePic {
   height: 400px;
@@ -190,6 +191,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+ 
 }
 
 .projectImgs {

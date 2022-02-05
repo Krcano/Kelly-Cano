@@ -23,6 +23,7 @@ To navigate to the page you want to go to click the navigation bar at the top fo
 | React.js          |
 | React-TsParticles |
 | CSS               |
+|Nodemailer|
 
 ## License
 

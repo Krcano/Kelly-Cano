@@ -4,8 +4,10 @@ import validateInfo from "../../utils/helper";
 import useForm from "../useContactForm";
 
 const Contact = () => {
-  const { handleInputChange, values, handleFormSubmit, errors } =
+  const { handleInputChange,status, values, handleFormSubmit, errors } =
     useForm(validateInfo);
+
+
 
   return (
     <div id="contact">
@@ -50,7 +52,7 @@ const Contact = () => {
           type="submit"
          
         >
-          Submit
+          {status}
         </button>
       </form>
     </div>
