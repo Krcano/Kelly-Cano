@@ -45,13 +45,13 @@ app.use(cors());
 app.use(express.json());
 app.use("/", router);
 
-const contactEmail = nodemailer.createTransport({
-  service: "gmail",
-  auth: {
-    user: process.env.EMAIL,
-    pass: process.env.PASS,
-  },
-});
+// const contactEmail = nodemailer.createTransport({
+//   service: "gmail",
+//   auth: {
+//     user: process.env.EMAIL,
+//     pass: process.env.PASS,
+//   },
+// });
 // IF USING OAUTH2 CHANGE CONACTEMAIL TO TRANSPORT
 transport.verify((error) => {
   if (error) {
