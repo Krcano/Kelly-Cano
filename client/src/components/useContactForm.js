@@ -20,6 +20,22 @@ const useForm = (validateInfo) => {
     });
   };
 
+  // function SubmitButton() {
+  //   if (values) {
+  //     return (
+  //       <button className="button" type="submit">
+  //         {status}
+  //       </button>
+  //     );
+  //   } else {
+  //     return (
+  //       <button type="button" disabled>
+  //         {status}
+  //       </button>
+  //     );
+  //   }
+  // }
+
   const handleFormSubmit = async (e) => {
     e.preventDefault();
     setErrors(validateInfo(values));
@@ -39,15 +55,18 @@ const useForm = (validateInfo) => {
       },
       body: JSON.stringify(details),
     });
-    setStatus("Submit");
-    let result = await response.json();
-    alert(result.status);
-    setValues({
-      name: "",
-      email: "",
-      message: "",
-    })
+
+    await response.json()
+      
+      setStatus("Submit");
+      setValues({
+        name: "",
+        email: "",
+        message: "",
+      });
+    // alert(result.status);
   };
+  
   return {
     handleInputChange,
     status,
@@ -55,6 +74,8 @@ const useForm = (validateInfo) => {
     handleFormSubmit,
     errors,
     validateInfo,
+   
+    // SubmitButton,
   };
 };
 export default useForm;

@@ -3,6 +3,7 @@ export default function validateInfo(values) {
   let errors = {};
   if (!values.name.trim()) {
     errors.name = "Name field is required";
+    
   }
   if (!values.email) {
     errors.email = "Email field is required";

@@ -4,14 +4,19 @@ import validateInfo from "../../utils/helper";
 import useForm from "../useContactForm";
 
 const Contact = () => {
-  const { handleInputChange,status, values, handleFormSubmit, errors } =
-    useForm(validateInfo);
-
-
+  const {
+    SubmitButton,
+    setValues,
+    handleInputChange,
+    status,
+    values,
+    handleFormSubmit,
+    errors,
+  } = useForm(validateInfo);
 
   return (
     <div id="contact">
-      <form  className="form" onSubmit={handleFormSubmit}>
+      <form className="form" onSubmit={handleFormSubmit}>
         <h1>Want to Connect?</h1>
         <h3 className="contactText">
           Feel free to contact me at{" "}
@@ -47,13 +52,10 @@ const Contact = () => {
           value={values.message}
         />
         {errors.message && <p className="errorText">{errors.message}</p>}
-        <button
-          className="button"
-          type="submit"
-         
-        >
+        <button className="button" type="submit">
           {status}
         </button>
+        {/* <SubmitButton/> */}
       </form>
     </div>
   );
