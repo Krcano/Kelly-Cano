@@ -15,14 +15,10 @@ const oAuth2Client = new OAuth2(
 
 oAuth2Client.setCredentials({ refresh_token: process.env.REFRESH_TOKEN });
 
-const accessToken = new Promise((resolve, reject) => {
-  oAuth2Client.getAccessToken((err, token) => {
-    if (err) {
-      reject("Failed to create access token");
-    }
-    resolve(token);
-  });
-});
+const accessToken = oAuth2Client.getAccessToken()
+   
+
+
 
 const transport = nodemailer.createTransport({
   service: "gmail",
