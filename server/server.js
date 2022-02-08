@@ -69,7 +69,7 @@ const sendMail = (message) => {
         return;
       }
       resolve(info)
-      ;
+      
     });
   });
 };
