@@ -3,8 +3,10 @@ import Footer from "./components/Footer";
 import About from "./components/Pages/About";
 import "./app.css";
 import Portfolio from "./components/Pages/Portfolio";
-import Contact from "./components/Pages/Contact";
+import Contact from "./Contact";
 import { useState } from "react";
+
+import { FormspreeProvider } from "@formspree/react";
 
 function App() {
   const [currentPage, setCurrentPage] = useState("aboutMe");
@@ -22,13 +24,15 @@ function App() {
   const handlePages = (page) => setCurrentPage(page);
 
   return (
-    <div className="App">
-      <Header currentPage={currentPage} handlePages={handlePages} />
+    <FormspreeProvider project="1874171648316276121">
+      <div className="App">
+        <Header currentPage={currentPage} handlePages={handlePages} />
 
-      {renderPage()}
+        {renderPage()}
 
-      <Footer className="App" />
-    </div>
+        <Footer className="App" />
+      </div>
+    </FormspreeProvider>
   );
 }
 

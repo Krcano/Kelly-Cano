@@ -1,0 +1,16 @@
+{
+  "forms": {
+    "contactMe": {
+      "name": "Contact Me",
+      "actions": [{ "type": "email", "to": "krcano2001@gmail.com" }],
+    "fields":{
+        "email": {
+            "required": true
+        },
+        "message":{
+          "required": true
+        }
+    }
+  }
+}
+}
