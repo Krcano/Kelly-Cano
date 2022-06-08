@@ -42,7 +42,7 @@ const Navigation = ({ handlePages }) => {
         <a
           className="navbarA"
           target="blank"
-          href="https://docs.google.com/document/d/1fyFPhvaP-1Lo1lQ4bbuSqSZTdiliBTZT1yPz8wfJ2K4/edit?usp=sharing"
+          href="https://docs.google.com/document/d/1At0IhvxaAEX7KN1fIbFbRCZCvWpZ9htd7rxATF2TXMo/edit?usp=sharing"
         >
           Resume
         </a>
